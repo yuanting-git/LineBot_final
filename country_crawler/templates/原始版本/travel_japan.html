@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>浪疾天涯(日本)</title>
+    <style>
+        .search h1 {
+            color: #f5f5f5;
+            /* background-color: rgba(32, 99, 65, 0.897);/* #4b7d6b */
+            margin-block-start: 1%;
+            margin-block-end: 0em;
+        }
+
+        .search h6 {
+            color: #f5f5f5;
+            /* background-color: rgba(32, 99, 65, 0.897); */
+            display: block;
+            /* font-size: 2em; */
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+        }
+
+        .search {
+            position: relative;
+            /* text-align: center; */
+            text-align: center;
+            border-radius: 10px;
+            background-color: rgba(32, 99, 65, 0.897);
+        }
+
+        .show {
+            position: relative;
+            padding: 10%;
+            padding-top: 0%;
+        }
+
+        .infor {
+            visibility: hidden;
+            position: absolute;
+        }
+
+        p {
+            font-weight: bold;
+            display: inline;
+        }
+
+        select {
+            font-size: large;
+            block-size: auto;
+            width: 20%;
+            height: auto;
+            border: 1px solid #000;
+            border-radius: 3px;
+            /*-webkit-appearance: none;/* 把下拉的icon拿掉 
+            -moz-appearance: none;
+             appearance: none;*/
+            padding: 5px 20px 5px 10px;
+            display: inline;
+            margin-top: 1%;
+        }
+
+        h2 {
+            color: #0e582ce3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search">
+        <h1>各地法規資訊</h1>
+        <h6>以下資料參考自<a
+                href="https://www.china-airlines.com/nz/zh/discover/news/travel-advisory/Immigration-Information#/Beijing"
+                style="color: azure;">中華航空</a>，旅客仍應依前往目的地所發布的官方資訊為依據。</h6>
+        <h6>最後更新時間 : 16:00 TPE (GMT+8), 2021 年 7 月 30 日</h6>
+        <!-- <h2 style="margin-block-start: 0.67em;">最新旅遊限制相關規定</h2>
+        <h4 style="margin-block-start: 0em;">由於各國政府或移民局會依疫情情勢隨時快速變更入、出境政令規定，本資訊僅供參考。<br>在此，我們仍強烈建議旅客於搭機前，務必預先查明各國官方入/出境規定，並依各國政府最新發布之相關規定及法令公告為主。</h4> -->
+        <div style="border-radius: 0 0 10px 10px;background-color: #caebe0 ; padding-bottom: 1%;">
+            <p style="display: inline;">請選擇查詢國家：</p>
+            <select name="country" id="country" onchange="self.location.href=options[selectedIndex].value">
+            <!-- <select name="country" id="country" onchange="countryChange()"> -->
+                <!--<optgroup label="Asia"></optgroup>-->
+                <!-- 10個國家 -->
+                <option value=0>--請選擇--</option>
+                <option selected value="Japan">日本</option>
+                <option value="https://350cdt4gvgwneotyifrh8g-on.drv.tw/WWW/travel_korea.html">南韓</option>
+                <!-- <option value="Macau">澳門</option> -->
+                <option value="https://350cdt4gvgwneotyifrh8g-on.drv.tw/WWW/travel_philippines.html">菲律賓</option>
+                <option value="Malaysia">馬來西亞</option>
+                <option value="Singapore">新加坡</option>
+                <option value="Thailand">泰國</option>
+                <option value="Vietnam">越南</option>
+                <option value="Indonesia">印尼</option>
+                <option value="China">中國</option>
+            </select>
+            <!-- <button type="button" class="btn btn--lg btn--green" id="FilterbBtnSubmit">確認</button> -->
+        </div>
+    </div>
+    <div class="show">
+        <!-- 用div做位置變換 -->
+        <!-- 日本Japan -->
+        <div class="infor" style="visibility: visible;" id="Japan">
+            <h2>日本Japan</h2>
+            <ol>
+                <li>禁止外籍人士以觀光為目的入境。</li>
+                <li>暫停所有指定國家人士入境。 名單(日文)</li>
+                <li>在申請入境日前 14 天曾停留南菲、英國或持有簽證(標有“ EX-R”註記)的外籍旅客將不被允許入境。</li>
+                <li>持有效再入國許可者，不再需要出示「再入國關聯書類提出確認書」或「受理書」。</li>
+            </ol>
+            <p>檢疫措施：</p>
+            <ol>
+                <li>自2021年1月13日起，所有入境旅客 (包含日籍) 皆須於出發前提交飛機表訂出發時間前 72
+                    小時內檢驗新冠病毒陰性證明，並於抵達後接受新冠病毒檢驗。下載表格(日/英文)，更多相關資訊請參閱日本厚生勞動省網站。</li>
+                <li>所有入境旅客，均須在指定場所 (自家或旅館) 隔離 14 天，並不得搭乘日本國內大眾交通工具。旅客需事先自行安排接送或租車。</li>
+                <li>入境日本旅客，須於報到完成至下機前，完成以下文件填寫及裝置設定 :
+                    <ul>
+                        <li>持有效再入國許可者，不再需要出示「再入國關聯書類提出確認書」或「受理書」。
+                        <li>上機前完成線上健康聲明書 (中/日/英)。抵達日本後需提交完整清楚的核可 QR Code 才可下機。相關填寫步驟可查閱官方公告。(中/日/英文)</li>
+                        <li>下機前完成填寫誓約書。 (日/英文)</li>
+                        <li>下機前完成入境健康卡填寫。(中/日/英文) (日/英文)</li>
+                        <li>旅客須持有能裝設追蹤 APP 的行動裝置，無持有者須自費租賃並於事前完成各 APP 設定。相關說明請查閱官方公告。(中/日/英文)
+                        <li>自名古屋中部機場入境旅客，上機前需加填相關檢疫APP安裝完成宣言書。(日/英文)</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>官方網頁最新資訊：</p><br>
+            <a href="https://www.koryu.or.jp/tabid2200.html">日本臺灣交流協會(中文)</a><br>
+            <a href="https://www.japan.travel/en/coronavirus/">日本觀光局(英文)</a><br>
+            <a href="http://www.moj.go.jp/hisho/kouhou/20200131comment.html">日本法務省(日文)</a><br>
+            <a href="https://www.mofa.go.jp/mofaj/page1_000864.html">日本外務省 (日文)</a><br>
+
+        </div>
+        <!-- 南韓Korea -->
+        <!-- <div class="infor" id="Korea">
+            <h2>南韓Korea</h2>
+            <p>符合以下一項或多項條件的旅客不得進入韓國：<br></p>
+            <ol>
+                <li>暫停濟州島免簽計劃。</li>
+                <li>暫停日本國籍旅客免簽計畫。 名單(日文)</li>
+                <li>暫停所有2020年4月5日前發出之短期簽證。</li>
+                <li>暫停超過 90 國之免簽入境及落地簽措施。</li>
+            </ol>
+            <p>豁免條件：<br></p>
+            <ol>
+                <li>韓國公民、永久居民、配偶和直系親屬。</li>
+                <li>航空機組員。</li>
+                <li>持APEC商務證件。</li>
+                <li>持有韓國外國人登錄證的人，只要他們具有重新入境許可證（外交官A-1、政府官員A-2及A-3類型除外）。</li>
+                <li>持有再次入境通行證的乘客（2020年6月1日後離開韓國），並且必須持有在出發前48小時內檢驗的新冠病毒病檢測陰性的醫療證明（韓/英文版本）。</li>
+                <li>E-9（就業許可證）卡持有人，惟他們須具有「自我隔離確認E9」表格。(英文)。</li>
+            </ol>
+            <p>轉機限制：<br></p>
+            <ol>
+                <li>僅允許 24 小時以內在仁川機場轉機</li>
+                <li>泰國、蒙古國籍者，無法經韓國轉機回到原國家</li>
+                <li>泰國國籍者，自泰國出發且持有前往第三國確認機票者，允許於仁川機場轉機。</li>
+                <li>經由韓國轉機前往中國大陸之旅客，須先入境韓國進行隔離。</li>
+            </ol>
+            <p>檢疫措施：<br></p>
+            <ol>
+                <li>入境韓國的所有旅客需自費檢疫隔離。</li>
+                <li>韓國國內完成疫苗所有劑次接種後出境再入境者可豁免隔離。（2021年5月5日起）。</li>
+                <li>入境前14天已於海外完整接種疫苗者，入境韓國時可免除隔離 (2021年7月 1日起) ，相關資訊請參閱大韓民國保健福祉部官網。</li>
+                <li>搭乘前往韓國的航班的所有旅客，在出發地進行體溫檢測，如果體溫超過37.5度，會被拒絕登機。</li>
+                <li>所有旅客需具可於韓國國內聯繫之電話。</li>
+                <li>持有可以安裝“ 自我隔離APP ”的行動裝置。</li>
+                <li>限制使用韓國國內大眾運輸工具及韓國國內航班（濟州居民除外)。</li>
+                <li>即日起所有台灣出發旅客上機前需繳交"隔離同意書"予航空公司人員。(中文) (韓文)</li>
+                <li>2021年 2 月 24 日起，所有旅客不分國籍，登機前均需提交航班表訂起飛時間前 72 小時內 PCR 檢驗陰性確認書。確認書須包含以下資訊：</li>
+                <ul>
+                    <li>旅客姓名/生日/護照號碼</li>
+                    <li>測試方法(Real Time PCR)</li>
+                    <li>檢驗日/開立日</li>
+                    <li>檢測機構戳章</li>
+                </ul>
+                <li>未提交陰性測試報告之韓籍旅客，應簽署同意自費集中檢疫表格。英文版或韓文版後，提交予華航機場地勤人員。</li>
+            </ol>
+        </div> -->
+        <!-- 澳門Macau -->
+        <div class="infor" id="Macau">
+            <h2>澳門Macau</h2>
+        </div>
+        <!-- 菲律賓Philippines -->
+        <div class="infor" id="Philippines">
+            <h2>菲律賓Philippines</h2>
+            <ol>
+                <li>禁止未持有有效類別簽證及外交部發行豁免信之外籍旅客入境菲律賓。</li>
+                <li>暫停所有免簽及落地簽措施。 </li>
+                <li>雙重國籍的菲律賓人應持有有效的菲律賓護照（旅行證件），身份證明或重新獲得、保留公民身份的證明。如果僅攜帶效忠誓言，將不允許進入菲律賓。</li>
+                <li>自2021年2月25日起，開放旅客持過期的再入國許可 (Re-Entry Permit,RP) 或特許回國證 (Special Return Certificate,SRC) 入境菲律賓。</li>
+                <li>以下條件旅客禁止入境菲律賓 : </li>
+                <ul>
+                    <li>抵達菲律賓14天前曾到訪印尼之旅客(自2021年7月16日當地時間起開始實施)</li>
+                    <li>抵達菲律賓14天前曾到訪印度，巴基斯坦，尼泊爾，斯里蘭卡，孟加拉，阿曼和阿聯酋之旅客。(自2021年5月13日起開始實施)</li>
+                </ul>
+            </ol>
+            <p>豁免條件：<br></p>
+            <ol>
+                <li>菲律賓公民（即菲律賓護照持有人或具有菲律賓國籍證明人士（例如身份證明或菲律賓國籍保留、重新獲得證明書）。</li>
+                <li>與菲律賓公民同行的配偶和未成年子女，並持有有效簽證（新的或現有簽證）。</li>
+                <li>外籍旅客持有在旅行限制期間（外交部豁免旅行限制國家的外國國民臨時簽證簽發）由外交部簽發的有效入境豁免文件。</li>
+                <li>經認可的外交官和國際組織，例如世界衛生組織、聯合國9（e）簽證持有人，或具有有效 47(a)(2) 簽證及外交部授權的外交、官方、普通護照持有人</li>
+                <li>外籍貴賓（經外交部授權）。</li>
+                <li>醫療及緊急情況個案，包括相關人士的醫療陪同人員（如有；並且必須持有有效的9（a）簽證及外交部授權）。</li>
+            </ol>
+            <p>檢疫措施：<br></p>
+            <ol>
+                <li>2021年7月1日起，於菲律賓接種完整疫苗者或於海外接種完整疫苗且來自低風險國家(含台灣)之旅客，需預定檢疫旅館並於抵達後進行7天隔離(抵達當天為隔離第1天)，並於抵達後第5天接受COVID-19檢測。低風險國家名單查閱。
+                </li>
+                <ul>
+                    <li>7天意指7晚。</li>
+                    <li>完成疫苗接種意指於入境前14天完成施打第一劑或第二劑疫苗。</li>
+                    <li>疫苗接種種類需為菲律賓政府或世界衛生組織認可。</li>
+                    <li>完整接種疫苗者須於起飛前出示疫苗接種證明。</li>
+                </ul>
+                <li> 所有未接種完整疫苗之外籍旅客(持9e類簽證者除外)，須出示預訂當地認證之防疫旅館/設施至少
+                    10晚住宿證明，予境管局查驗。無法提交者，將被拒入境並即刻於下一航班遣返。此外，旅客須自抵達之日起第7天在檢疫酒店/設施接受COVID-19檢測。</li>
+                <li>所有進出菲律賓的乘客在飛行中以及菲律賓的機場航廈內都必須佩戴口罩和面罩。</li>
+                <li>所有出入境菲律賓旅客，須於搭機前下載健康追蹤 APP，拒絕配合者將不予以進入航廈或搭機。</li>
+                <li>自2021年7月15日起，所有入境旅客皆須於登機前完成線上健康聲明書</li>
+            </ol>
+        </div>
+        <!-- 馬來西亞Malaysia -->
+        <div class="infor" id="Malaysia">
+            <h2>馬來西亞Malaysia</h2>
+            <ol>
+                <li>所有外籍旅客皆不得以觀光為目的進入。自 2021年 4 月28日起，禁止自印度出發之外籍旅客入境。</li>
+                <li>轉機旅客僅限搭乘於 48 小時內同航廈之航班。轉國內線(沙巴/沙勞越)旅客，須有航班出發前 5 小時內抗原快篩檢測陰性報告，否則無法登機。 </li>
+                <li>可入境旅客，包括馬來西亞公民，以及所有特別准許入境的外國公民與機組員，「啟程前」須在手機下載 My Sejahtera APP，並成功完成登入個人資料，填寫大馬住所。</li>
+                <li>所有外籍旅客，無論持有任何類型的簽證，包括永久居留證和配偶簽證等長期通行證，仍必須獲得馬來西亞移民局簽發的核准書才能入境。</li>
+                <li>航空機組人員須隔離至下次航班任務前並於手機安裝 My Sejahtera APP </li>
+            </ol>
+            <p>檢疫措施：<br></p>
+            <ol>
+                <li>自2021年5月25日起，所有旅客包含外籍及大馬籍，皆須提交航班起飛前 3 日內檢測新冠病毒陰性報告。</li>
+                <li>旅客抵達後須再次接受檢測並隔離 10-21 天不等。</li>
+            </ol>
+        </div>
+        <!-- 新加坡Singapore -->
+        <div class="infor" id="Singapore">
+            <h2>新加坡Singapore</h2>
+            <ol>
+                <li>短期到訪之外籍旅客原則上不得進入或過境新加坡 (部分國家開放)。</li>
+                <li>暫停所有以往對於中國大陸和伊朗護照的旅客發放之所有形式簽證。 </li>
+                <li>其他入境/檢疫規範更新。請參考新加坡移民局網站。</li>
+                <li>禁止過去 14 天內曾經到過南非與英國者進行商務旅遊。</li>
+            </ol>
+            <p>豁免條件：<br></p>
+            <ol>
+                <li>工作簽證持有人（不論國籍），均須獲得新加坡人力部（MOM）的入境許可書。(將僅有提供必要之醫療或運輸工作人員及其撫養人可獲准)。</li>
+                <li>持移民署發行之長期工作證旅客，應先取得移民署同意入境函。</li>
+                <li>持學生通行證之旅客，應先取得教育部(MOE)同意入境函。</li>
+                <li>上述同意函效期是2週，旅客入境時需攜帶</li>
+                <li>持有新加坡貿易和工業部（MTI）核發的“預先批准商務通行證”的乘客，符合 MTI 條件可進入新加坡。旅客須在辦理報到手續時，向航空公司人員出示通行證副本，並在抵達新加坡後，向 ICA 出示該文件。
+                </li>
+                <li> 新加坡公民，永久居民和持長期通行證者，不需申請 ATP。惟長期通行證持有人仍需要獲得新加坡移民局(ICA)或人力部(MOM)或教育部(MOE)的入境核准信。</li>
+            </ol>
+        </div>
+        <!-- 泰國Thailand -->
+        <div class="infor" id="Thailand">
+            <h2>泰國Thailand</h2>
+            <ol>
+                <li>暫停一般商業往來泰國航班。2020 年 11 月起開放旅客搭乘"類商業"航班往返泰國。</li>
+                <li>停止外籍人士以落地簽證入境。 </li>
+                <li>不適用國家或軍用飛機、緊急降落、沒有下機的技術降落、人道救援、醫療和遣返航機。</li>
+                <li>自 2021 年 5 月 6 日起，所有旅客抵達後需進行 14 天隔離，無法國際線直轉國內線。</li>
+                <li>曼谷蘇旺納普機場(BKK)開放間隔 12 小時內國際航班轉機，轉機期間須於指定區域等待。(請事前與搭乘之航空公司進行確認)。</li>
+            </ol>
+            <p>豁免條件：<br></p>
+            <ol>
+                <li>泰國公民。</li>
+                <li>由泰國總理或政府官員允許或邀請進入泰國解決緊急狀況的人員。</li>
+                <li>以外交使團、領事事務、國際組織、政府代表、駐泰國外國政府機構為由的入境人員，或獲外交部允許在其他國際機構工作的外籍人士以及其配偶、父母、子女。</li>
+                <li>泰國公民的外籍配偶、父母或子女</li>
+                <li>持有有效居住證或允許在泰國居住的外籍人士。</li>
+                <li>持有有效工作許可證或被允許在泰國工作的外籍人士，包括其外籍的配偶、子女。</li>
+                <li>在獲准的泰國教育機構就學的外籍人士，包括學生的父母或監護人。(不含法規上定義非正規系列學校。)。</li>
+                <li>需要在泰國接受醫學治療的外籍人士及隨行人士。（不含有關新冠病毒的醫學治療。）</li>
+                <li>受特殊安排而獲總理允許進入的外籍人士。</li>
+                <li>運送必需貨物人員，完成職務後需立即離境。</li>
+                <li>需進入泰國執行任務並有指定離境日期及時間的航空人員。</li>
+                <li>開放旅遊沙盒計畫之旅客入境，指定地區為普吉府(自2021年7月1日起)及蘇美島(自2021年7月15日起)。旅客皆須於抵達前14天接種完整疫苗(疫苗種類須經WHO或泰國公共衛生部認可)，更多相關資訊請參閱普吉島觀光協會網站或泰國大使館網站。
+                </li>
+            </ol>
+            <p>入境所須文件：<br></p>
+            <p>泰籍:以下第1至3項。<br></p>
+            <p>非泰籍:以下第1至6項<br></p>
+            <ol>
+                <li>有效護照。</li>
+                <li>由泰國外交部核發的入境許可 (COE)。申請網站(泰文、英文)。</li>
+                <li>以外交使團、領事事務、國際組織、政府代表、駐泰國外國政府機構為由的入境人員，或獲外交部允許在其他國際機構工作的外籍人士以及其配偶、父母、子女。</li>
+                <li>政府認證防疫旅館(AQ)之抵達日預訂證明</li>
+                <li>泰國入境有效簽證。</li>
+                <li>表訂起飛時間前 72 小時內 RT-PCR 檢測證明新冠病毒測試陰性報告。</li>
+                <li>由保險公司或雇主開立可於泰國境內支付同等 10 萬美元額度的醫療保險證明書。(需涵蓋停留期間並且包含新冠病毒醫學治療項目。)。</li>
+            </ol>
+            <p>其他相關資訊，可參考</p>
+            <a href="https://www.caat.or.th/en/">泰國民航局網站(英文) </a><br>
+            <a href="https://www.moph.go.th/">泰國公共衛生部網站(泰文) </a><br>
+            <a href="https://thaievisa.go.th/">泰國外交部 (英文) </a><br>
+        </div>
+        <!-- 越南Vietnam -->
+        <div class="infor" id="Vietnam">
+            <h2>越南Vietnam</h2>
+            <ol>
+                <li>所有外籍旅客禁止入境。</li>
+                <li>所有入境航班不得載運旅客。 </li>
+                <li>航空公司要載運越南籍旅客離開也須向越南大使館詢問。</li>
+            </ol>
+            <p>豁免條件：<br></p>
+            <ol>
+                <li>外交/官方護照持有人。</li>
+                <li>其他特殊情況對象（如外國旅客出席或服務重要的對外活動；專家，企業管理者，高技術勞工和其他已得到新型冠狀病毒國家預防中心允許的對象）。</li>
+                <li>8月5日起針對外國專家入境越南，需檢附出發前 3-5 日內所檢驗的 PCR 陰性證明並有國際醫療保險或邀請單位保證。專家倘被檢出 COVID-19 確診，須負責支付醫療費用。。</li>
+            </ol>
+            <p>檢疫要求：<br></p>
+            <ol>
+                <li>所有旅客需穿戴全套防疫裝備及面罩，並於抵達越南後均須立即接受 21 天強制隔離檢疫。</li>
+                <li>所有旅客必須在到達越南前填寫健康申報表 (英文/簡體中文)。</li>
+            </ol>
+            <p>其他：<br></p>
+            <ol>
+                <li>暫停所有外籍旅客的落地簽證及免簽計畫。</li>
+                <li>對持有外國護照的越南藉或越南藉家庭成員暫停免簽。</li>
+            </ol>
+        </div>
+        <!-- 印尼Indonesia -->
+        <div class="infor" id="Indonesia">
+            <h2>印尼Indonesia</h2>
+            <ol>
+                <li>暫停免簽入境及落地簽證核發。</li>
+                <li>准予入境及轉機之旅客包括：
+                    <ul>
+                        <li>持有外交人員證及公務居留證者。
+                        <li>持有公務簽證或外交簽證者</li>
+                        <li>持有居留證(KITAS)或永久居留證(KITAP)者</li>
+                        <li>透過旅遊走廊 (Travel Corridor Arragement,TCA)入境者</li>
+                        <li>持有停留簽證 (Visa Kunjungan)或居留簽證 (Visa Tinggal Terbatas)者</li>
+                        <li>持有APEC商務旅行卡者 (背面需標註有"印尼")</li>
+                        <li>持有印尼政府部會特殊准許之書面文件者。</li>
+                        <li>印尼籍旅客。</li>
+                    </ul>
+                </li>
+                <li>轉機國內線無法直接銜接，旅客需於隔離結束後才能繼續下個行程。</li>
+            </ol>
+            <p>檢疫措施：<br></p>
+            <ol>
+                <li>所有入境旅客均須出示完整疫苗接種證明（紙本或數位證明）。</li>
+                <li>所有可入境旅客，不分國籍一律需持有出發前 72 小時內 (以採檢時間起算，並包含例假日) 開立之 PCR 陰性檢測證明。</li>
+                <li>入境印尼旅客，需於上機前完成線上健康聲明書 (英文/印尼文)。抵達後需提交完整清楚的核可畫面。</li>
+                <li>所有入境旅客皆須入住政府指定防疫旅館隔離8天，並於入境第1天及第7天接受兩次PCR檢測。完成8天隔離且二次PCR檢測結果均為陰性者，始得進入印尼社區(惟仍建議旅客另行居家檢疫14天)；PCR檢測結果為陽性者，須入院治療。印尼籍人士及印尼政府官員入住防疫旅館及二次篩檢之費用由政府負擔，外籍人士則須自費負擔。
+                </li>
+                <li>外籍旅客得豁免隔離檢疫(以下1-3項)或免除出示疫苗接種證明(以下1-7項)之條件如下：
+                    <ul>
+                        <li>持外交及公務簽證從事公務行程者。
+                        <li>部長級以上官員。</li>
+                        <li>透過旅遊走廊 (Travel Corridor Arragement,TCA)入境者。</li>
+                        <li>由父母隨同之12歲以下孩童。</li>
+                        <li>因健康因素理由不適合接種疫苗而無法出示疫苗接種證明者，須於入境印尼或搭乘印尼國內航班時出示英文版或印尼文版之醫生診斷證明</li>
+                        <li>即將離境印尼之國際旅客或運輸機組人員</li>
+                        <li>欲搭乘印尼國內線轉搭國際線離境之國際旅客，搭機時須先向航空公司及印尼機場出示轉搭國際線之機票證明，且轉機期間不得離開機場。</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <!-- 中國China -->
+        <div class="infor" id="China">
+            <h2>中國China</h2>
+            <h3>北京</h3>
+            <ol>
+                <li>暫時停止所有外籍旅客入境及轉機。(自2020年9月28日0時起，開放持有效中國大陸工作類、私人事務類和團聚類居留許可的外籍人士入境，無需重新申辦簽證。如持有的上述三類居留許可但已於2020年3月28日0時後過期，在前往的事由不變情況下，可憑過期居留許可，重新向駐外使館申辦簽證入境。)。
+                </li>
+                <li>暫停受理目前持有之簽證和入境證件。 </li>
+                <li>台籍旅客可持有效台胞證進入北京。</li>
+                <li>暫停台籍旅客持過期台胞證加上台灣身份證，辦理落地簽 (一次性台胞證)。。</li>
+            </ol>
+            <p>豁免條件：<br></p>
+            <ol>
+                <li>持外交、公務、禮遇、C 字簽證。</li>
+                <li>外國人持 2020/3/28 公告後簽發的簽證入境不受影響。</li>
+            </ol>
+            <p>檢疫要求：<br></p>
+            <ol>
+                <li>所有自北京入境人員不分目的地，需接受就地 14 天集中隔離觀察及核酸檢測，費用自付。</li>
+                <li>抵達地之集中隔離期滿後，另再進行 7 天的防疫旅館隔離及 7 天自主健康監測。</li>
+            </ol>
+        </div>
+    </div>
+
+
+
+    <script type="text/JavaScript">
+          function countryChange(){//偵測到選取不同國家
+          var myselect = document.getElementById("country");    //取得物件
+          var country = myselect.options[myselect.selectedIndex].value; //取得值
+         /*用不到，放著參考myselect.options[index].value; */
+         document.getElementById("Japan").style.visibility="hidden";//div隱藏國家資訊
+         document.getElementById("Korea").style.visibility="hidden";//div隱藏國家資訊
+         document.getElementById("Macau").style.visibility="hidden";//div隱藏國家資訊
+         document.getElementById("Philippines").style.visibility="hidden";//div隱藏國家資訊
+         document.getElementById("Malaysia").style.visibility="hidden";//div隱藏國家資訊
+         document.getElementById("Singapore").style.visibility="hidden";//div隱藏國家資訊
+         document.getElementById("Thailand").style.visibility="hidden";//div隱藏國家資訊
+         document.getElementById("Vietnam").style.visibility="hidden";//div隱藏國家資訊
+         document.getElementById("Indonesia").style.visibility="hidden";//div隱藏國家資訊
+         document.getElementById("China").style.visibility="hidden";//div隱藏國家資訊
+
+         document.getElementById(country).style.visibility="visible";//div顯示國家資訊
+         //showcountry(country); //沒用到，為呼叫JS的function，顯示選取的國家資訊
+          }
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>浪疾天涯(馬來西亞)</title>
+    <style>
+        .search h1 {
+            color: #f5f5f5;
+            /* background-color: rgba(32, 99, 65, 0.897);/* #4b7d6b */
+            margin-block-start: 1%;
+            margin-block-end: 0em;
+        }
+
+        .search h6 {
+            color: #f5f5f5;
+            /* background-color: rgba(32, 99, 65, 0.897); */
+            display: block;
+            /* font-size: 2em; */
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            font-size: 1.5rem;
+        }
+
+        .search {
+            position: relative;
+            /* text-align: center; */
+            text-align: center;
+            border-radius: 10px;
+            font-size: 2em;
+            background-color: rgba(32, 99, 65, 0.897);
+        }
+
+        .show {
+            position: relative;
+            padding: 10%;
+            padding-top: 0%;
+            font-size: 3em;
+        }
+
+        .infor {
+            visibility: visible;
+            position: absolute;
+        }
+
+        p {
+            font-weight: bold;
+            display: inline;
+        }
+
+        select {
+            font-size: large;
+            block-size: auto;
+            width: 20%;
+            height: auto;
+            border: 1px solid #000;
+            border-radius: 3px;
+            /*-webkit-appearance: none;/* 把下拉的icon拿掉 
+            -moz-appearance: none;
+             appearance: none;*/
+            padding: 5px 20px 5px 10px;
+            display: inline;
+            margin-top: 1%;
+            font-size: 85%;
+        }
+
+        h2 {
+            color: #0e582ce3;
+        }
+        pre {
+            width: 90%;
+            white-space: pre-wrap;
+            /* css-3 */
+            white-space: -moz-pre-wrap;
+            /* Mozilla, since 1999 */
+            white-space: -pre-wrap;
+            /* Opera 4-6 */
+            white-space: -o-pre-wrap;
+            /* Opera 7 */
+            word-wrap: break-word;
+            /* Internet Explorer 5.5+ */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search">
+        <h1>各地法規資訊</h1>
+        <h6>以下資料參考自<a
+                href="https://www.china-airlines.com/nz/zh/discover/news/travel-advisory/Immigration-Information#/Beijing"
+                style="color: azure;">中華航空</a>，旅客仍應依前往目的地所發布的官方資訊為依據。</h6>
+        <h6>{{ updatetime }}</h6>
+        <!-- <h2 style="margin-block-start: 0.67em;">最新旅遊限制相關規定</h2>
+        <h4 style="margin-block-start: 0em;">由於各國政府或移民局會依疫情情勢隨時快速變更入、出境政令規定，本資訊僅供參考。<br>在此，我們仍強烈建議旅客於搭機前，務必預先查明各國官方入/出境規定，並依各國政府最新發布之相關規定及法令公告為主。</h4> -->
+        <div style="border-radius: 0 0 10px 10px;background-color: #caebe0 ; padding-bottom: 1%;">
+
+            <!--<optgroup label="Asia"></optgroup>-->
+            <p style="display: inline;">請選擇查詢國家：</p>
+            <!-- <select name="country" id="country" onchange="countryChange()"> -->
+            <select name="country" id="country" onchange="self.location.href=options[selectedIndex].value">
+                <option value=0 selected disabled>--請選擇國家--</option>
+                <optgroup label="完整法規">
+                    <!-- 10個國家 -->
+                    <option value="/japan">日本</option>
+                    <option value="/korea">南韓</option>
+                    <option value="/macau">澳門</option>
+                    <option value="/philippines">菲律賓</option>
+                    <option value="/malaysia">馬來西亞</option>
+                    <option value="/singapore">新加坡</option>
+                    <option value="/thailand">泰國</option>
+                    <option value="/vietnam">越南</option>
+                    <option value="/indonesia">印尼</option>
+                    <!-- <option value="China">中國</option> -->
+                </optgroup>
+                <optgroup label="僅豁免/檢疫條件">
+                    <option value="/japanCon">日本</option>
+                    <option value="/koreaCon">南韓</option>
+                    <option value="/macauCon">澳門</option>
+                    <option value="/philippinesCon">菲律賓</option>
+                    <option selected value="/malaysiaCon">馬來西亞</option>
+                    <option value="/singaporeCon">新加坡</option>
+                    <option value="/thailandCon">泰國</option>
+                    <option value="/vietnamCon">越南</option>
+                    <option value="/indonesiaCon">印尼</option>
+                    <!-- <option value="ChinaCon">中國</option> -->
+                </optgroup>
+            </select>
+        </div>
+    </div>
+    <div class="show">
+        <!-- 用div做位置變換 -->
+        <div class="infor" id="Malaysia">
+            <h2>馬來西亞Malaysia</h2>
+            <pre>{{ user_template }}</pre>
+        </div>
+    </div>
+
+    <script type="text/JavaScript">
+        function countryChange(){//偵測到選取不同國家
+        var myselect = document.getElementById("country");    //取得物件
+        var country = myselect.options[myselect.selectedIndex].value; //取得值
+        //myselect.options[index]=0
+        /*用不到，放著參考myselect.options[index].value; */
+
+        //先隱藏所有div
+        /*全部法規*/
+        document.getElementById("Malaysia").style.visibility="hidden";//div隱藏國家資訊
+
+
+        document.getElementById(country).style.visibility="visible";//div顯示國家資訊
+        //showcountry(country); //沒用到，為呼叫JS的function，顯示選取的國家資訊
+        }
+    </script>
+
+</body>
+
+</html>
