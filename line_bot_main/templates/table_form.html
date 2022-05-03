@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head><link rel="stylesheet" href="{{ url_for('static',    filename='css/template.css') }}"></head>
+  <!-- <style>
+    table, th, td {
+      border:1px solid black;
+    }
+
+    .dialog{
+      position:fixed;top: 100px;left: 50%;transform: translate(-370px,0px);width:740px;height: 500px;
+      padding: 10px;border: 1px solid #888888;
+      background-color: #eeeeee;box-shadow: 0px 0px 10px #000000;
+      display: none;
+    }
+
+    .dialog>.close{
+      position: absolute;top: 3px;right: 3px;cursor: pointer;
+    }
+  </style> -->
+  
+<!-- 
+  <script>
+    var dialog;
+    window.onload=function(){
+      dialog=document.getElementById("dialog");
+    };
+    function showDialog(){
+      dialog.style.display="block";
+    }
+
+    function closeDialog(){
+      dialog.style.display="none";
+    }
+  </script> -->
+
+  <body>
+
+    <h2>浪疾天涯人工回覆後台</h2>
+<!-- 
+    <div id="dialog" class="dialog">
+      <div class="close" onclick="closeDialog();">X</div>
+      這是一個回答問題的區塊<br>
+      <form method='post' action="/post_submit"> 
+        <input type='text' name='username'>
+        <button type='submit'>Submit</button>
+      </form>
+
+    </div> -->
+
+    <table style="width:100%" class="content-table">
+      <thead>
+        <tr>
+            <th>使用者ID</th>
+            <th>問題內容</th>
+            <th>是否回復</th>
+            <th>發問時間</th>
+            <th> </th>
+           
+          </tr>
+      </thead>     
+      
+        {% for d in data %}
+        <tr>
+            <th>{{ d[1] }}</th>
+            <th>{{ d[2] }}</th>
+            <th>{{ d[3] }}</th>
+            <th>{{ d[4] }}</th>
+            <!-- <th><button onclick="showDialog();">回覆問題</button></th> -->
+            <th>      
+              <form method='post' action="/post_submit"> 
+                <!-- <input type='text' name='username'> -->
+                <input type="hidden" name="qid" value="{{d[0]}}" />               
+                <input type="hidden" name="uid" value="{{d[1]}}" />
+                <input type="hidden" name="question" value="{{d[2]}}" />
+                <input type="hidden" name="have_replied" value="{{d[3]}}" />
+                <input type="hidden" name="datetime" value="{{d[4]}}" />
+
+                <button type='submit'>回復</button>
+              </form>
+            </th>        
+        </tr>
+        {% endfor %}
+
+    </table>
+
+
+  </body>
+</html>

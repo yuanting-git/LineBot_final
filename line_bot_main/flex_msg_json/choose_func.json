@@ -1,0 +1,55 @@
+{
+    "type": "bubble",
+    "size": "kilo",
+    "hero": {
+      "type": "image",
+      "url": "https://i.pinimg.com/564x/65/a9/43/65a9434b8b627940627b024296f2121c.jpg",
+      "size": "full",
+      "aspectRatio": "20:13",
+      "aspectMode": "cover",
+      "action": {
+        "type": "uri",
+        "uri": "http://linecorp.com/"
+      }
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "日本旅遊資訊",
+          "weight": "bold",
+          "size": "xl"
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "spacing": "none",
+      "contents": [
+        {
+          "type": "button",
+          "style": "link",
+          "height": "sm",
+          "action": {
+            "type": "uri",
+            "label": "查看機票資訊",
+            "uri": "https://linecorp.com"
+          }
+        },
+        {
+          "type": "button",
+          "style": "link",
+          "height": "sm",
+          "action": {
+            "type": "uri",
+            "label": "查看旅行社資訊",
+            "uri": "https://linecorp.com"
+          }
+        }
+      ],
+      "flex": 0
+    }
+  }

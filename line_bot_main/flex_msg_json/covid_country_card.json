@@ -1,0 +1,93 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "hero": {
+        "type": "image",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/255px-Flag_of_Japan.svg.png",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "日本",
+            "style": "normal",
+            "align": "start",
+            "size": "xl",
+            "margin": "none",
+            "weight": "bold",
+            "decoration": "none",
+            "offsetStart": "5px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "今日新增:",
+                "weight": "bold",
+                "offsetStart": "md",
+                "offsetTop": "sm"
+              },
+              {
+                "type": "text",
+                "text": "累計死亡:",
+                "weight": "bold",
+                "offsetStart": "md",
+                "offsetTop": "md"
+              },
+              {
+                "type": "text",
+                "text": "累計確診:",
+                "weight": "bold",
+                "offsetStart": "md",
+                "offsetTop": "lg"
+              }
+            ],
+            "height": "80px"
+          }
+        ],
+        "height": "120px"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "查看日本其它地區",
+              "text": "@日本其它地區"
+            },
+            "offsetEnd": "none",
+            "offsetTop": "none",
+            "height": "sm",
+            "margin": "none"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "查看更多國家",
+              "text": "@疫情現況"
+            },
+            "offsetTop": "none",
+            "height": "sm"
+          }
+        ],
+        "offsetStart": "none",
+        "borderWidth": "none",
+        "offsetTop": "none"
+      }
+    }
+  ]
+}

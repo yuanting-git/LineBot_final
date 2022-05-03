@@ -1,0 +1,95 @@
+
+{% block body %}<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+
+    <!-- Right Column -->
+    <div class="w3-half w3-container">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>問題回復</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>使用者ID:</b></h5>
+       
+          <p> {{uid}}</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>問題內容:</b></h5>
+
+          <p>{{question}}</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>是否回復:</b></h5>
+
+          <p>{{have_replied}}</p><br>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>發問時間:</b></h5>
+       
+          <p>{{datetime}}</p>
+          <hr>
+        </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+      <!-- Right Column -->
+    <div class="w3-half w3-container">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <br>
+
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>回覆內容:</b></h5>
+          <form method='post' action="/question_list"> 
+            <input type="hidden" name="uid" value="{{uid}}" />
+            <input type="hidden" name="question" value="{{question}}" />  
+            <input type="hidden" name="datetime" value="{{datetime}}" />  
+            <input type="hidden" name="qid" value="{{qid}}" />  
+        
+            <textarea  resize : none; name="reply" rows="5" cols="33" ; style="font-size: 25px  ;width:100%; height: auto;" ></textarea>
+            <br>
+            <button type='submit' style="float: right; background-color: #009688;border: none;color: white;padding: 16px 32px;text-decoration: none;margin: 4px 2px;cursor: pointer;">
+              回復</button>
+        
+          </form>
+
+        <div class="w3-container">
+          <h5 class="w3-opacity"></h5>
+       	<br>
+
+          <hr>
+        </div>
+    <!-- End Right Column -->
+    </div>
+  <!-- End Page Container -->
+</div>
+
+
+
+</body>
+</html>
+
+
+{% endblock %}

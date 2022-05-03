@@ -1,0 +1,147 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "hero": {
+        "type": "image",
+        "url": "https://cdn.countryflags.com/thumbs/japan/flag-400.png",
+        "size": "full",
+        "aspectMode": "cover",
+        "aspectRatio": "320:213"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "日本新聞",
+            "weight": "bold",
+            "size": "xxl",
+            "wrap": true,
+            "style": "normal",
+            "align": "center",
+            "margin": "none",
+            "offsetStart": "none"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "postback",
+                  "label": "訂閱新聞",
+                  "data": "action=subscribe&item=news&country=japan",
+                  "displayText": "訂閱成功!"
+                },
+                "style": "primary",
+                "color": "#27ae60",
+                "position": "relative",
+                "margin": "sm",
+                "height": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "postback",
+                  "label": "取消訂閱新聞",
+                  "data": "action=cancel&country=japan",
+                  "displayText": "取消成功!"
+                },
+                "style": "secondary",
+                "height": "sm",
+                "offsetTop": "3%",
+                "color": "#bdc3c7"
+              }
+            ],
+            "paddingAll": "sm",
+            "paddingTop": "none",
+            "paddingBottom": "xl",
+            "paddingStart": "lg",
+            "paddingEnd": "lg",
+            "spacing": "lg"
+          }
+        ],
+        "spacing": "sm",
+        "paddingAll": "13px",
+        "backgroundColor": "#ecf0f1",
+        "borderWidth": "none"
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "hero": {
+        "type": "image",
+        "url": "https://cdn.countryflags.com/thumbs/south-korea/flag-400.png",
+        "size": "full",
+        "aspectMode": "cover",
+        "aspectRatio": "320:213"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "韓國新聞",
+            "weight": "bold",
+            "size": "xxl",
+            "wrap": true,
+            "style": "normal",
+            "align": "center",
+            "margin": "none",
+            "offsetStart": "none"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "postback",
+                  "label": "訂閱新聞",
+                  "data": "action=subscribe&item=news&country=korea",
+                  "displayText": "訂閱成功!"
+                },
+                "style": "primary",
+                "color": "#27ae60",
+                "position": "relative",
+                "margin": "sm",
+                "height": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "postback",
+                  "label": "取消訂閱新聞",
+                  "data": "action=cancel&country=korea",
+                  "displayText": "取消成功!"
+                },
+                "style": "secondary",
+                "height": "sm",
+                "offsetTop": "3%",
+                "color": "#bdc3c7"
+              }
+            ],
+            "paddingAll": "sm",
+            "paddingTop": "none",
+            "paddingBottom": "xl",
+            "paddingStart": "lg",
+            "paddingEnd": "lg",
+            "spacing": "lg"
+          }
+        ],
+        "spacing": "sm",
+        "paddingAll": "13px",
+        "backgroundColor": "#ecf0f1",
+        "borderWidth": "none"
+      }
+    }
+  ]
+}

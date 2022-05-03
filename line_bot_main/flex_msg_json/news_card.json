@@ -1,0 +1,150 @@
+{
+    "type": "bubble",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "image",
+          "url": "https://www.asahicom.jp/articles/images/c_AS20210806002286_comm.jpg",
+          "size": "full",
+          "aspectMode": "cover",
+          "aspectRatio": "2:3",
+          "gravity": "top"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "title",
+                  "size": "xl",
+                  "color": "#ffffff",
+                  "weight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "baseline",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "release_time",
+                  "color": "#ebebeb",
+                  "size": "sm",
+                  "flex": 0,
+                  "wrap": true
+                }
+              ],
+              "spacing": "lg"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "filler"
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    },
+                    {
+                      "type": "text",
+                      "text": "news_link_button",
+                      "color": "#ffffff",
+                      "flex": 0,
+                      "offsetTop": "-2px"
+                    },
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "spacing": "sm",
+                  "action": {
+                    "type": "uri",
+                    "label": "新聞",
+                    "uri": "https://translate.google.com/translate?hl=&sl=ja&tl=zh-TW&u=https://www.asahi.com/articles/ASP8663RHP86UTIL03T.html"
+                  }
+                },
+                {
+                  "type": "filler"
+                }
+              ],
+              "borderWidth": "1px",
+              "cornerRadius": "4px",
+              "spacing": "sm",
+              "borderColor": "#ffffff",
+              "margin": "xxl",
+              "height": "40px"
+            }
+          ],
+          "position": "absolute",
+          "offsetBottom": "0px",
+          "offsetStart": "0px",
+          "offsetEnd": "0px",
+          "backgroundColor": "#03303Acc",
+          "paddingAll": "20px",
+          "paddingTop": "18px"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "news_name",
+              "color": "#ffffff",
+              "align": "center",
+              "size": "xs",
+              "offsetTop": "3px",
+              "wrap": true
+            }
+          ],
+          "position": "absolute",
+          "cornerRadius": "20px",
+          "offsetTop": "18px",
+          "backgroundColor": "#ff334b",
+          "offsetStart": "18px",
+          "height": "23px",
+          "width": "85px",
+          "action": {
+            "type": "uri",
+            "label": "action",
+            "uri": "https://www.asahi.com"
+          }
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "country",
+              "align": "center",
+              "size": "xs",
+              "offsetTop": "3px",
+              "wrap": true
+            }
+          ],
+          "position": "absolute",
+          "cornerRadius": "20px",
+          "offsetTop": "18px",
+          "backgroundColor": "#a6ed8e",
+          "height": "23px",
+          "width": "85px",
+          "offsetEnd": "18px"
+        }
+      ],
+      "paddingAll": "0px"
+    }
+  }

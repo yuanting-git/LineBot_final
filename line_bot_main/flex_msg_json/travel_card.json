@@ -1,0 +1,136 @@
+{
+    "type": "bubble",
+    "hero": {
+        "type": "image",
+        "url": "https://lh3.googleusercontent.com/RMzLlX7QMGZbPWjxeEtTCQtnY6J7fhYOJCBkYdTVzmHu633W8j9P0-RUsnPmide16XKDvAU3GIBrTLWW=w1080-h608-p-no-v0",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "action": {
+            "type": "uri",
+            "uri": "https://linecorp.com"
+        }
+    },
+    "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "action": {
+            "type": "uri",
+            "uri": "https://linecorp.com"
+        },
+        "contents": [
+            {
+                "type": "text",
+                "text": "ezTravel易遊網",
+                "size": "xl",
+                "weight": "bold"
+            },
+            {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "sm",
+                "contents": [
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "url": "https://image.flaticon.com/icons/png/512/1138/1138518.png"
+                            },
+                            {
+                                "type": "text",
+                                "text": "價格：",
+                                "weight": "bold",
+                                "margin": "sm",
+                                "flex": 0
+                            },
+                            {
+                                "type": "icon",
+                                "url": "https://image.flaticon.com/icons/png/512/1828/1828614.png"
+                            },
+                            {
+                                "type": "icon",
+                                "url": "https://image.flaticon.com/icons/png/512/1828/1828614.png"
+                            },
+                            {
+                                "type": "icon",
+                                "url": "https://image.flaticon.com/icons/png/512/1828/1828970.png"
+                            },
+                            {
+                                "type": "icon",
+                                "url": "https://image.flaticon.com/icons/png/512/1828/1828970.png"
+                            },
+                            {
+                                "type": "icon",
+                                "url": "https://image.flaticon.com/icons/png/512/1828/1828970.png"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "url": "https://image.flaticon.com/icons/png/128/3132/3132778.png"
+                            },
+                            {
+                                "type": "text",
+                                "text": "評價：",
+                                "weight": "bold",
+                                "margin": "sm",
+                                "flex": 0
+                            },
+                            {
+                                "type": "icon",
+                                "url": "https://image.flaticon.com/icons/png/512/1828/1828614.png"
+                            },
+                            {
+                                "type": "icon",
+                                "url": "https://image.flaticon.com/icons/png/512/1828/1828614.png"
+                            },
+                            {
+                                "type": "icon",
+                                "url": "https://image.flaticon.com/icons/png/512/1828/1828614.png"
+                            },
+                            {
+                                "type": "icon",
+                                "url": "https://image.flaticon.com/icons/png/512/2107/2107685.png"
+                            },
+                            {
+                                "type": "icon",
+                                "url": "https://image.flaticon.com/icons/png/512/1828/1828970.png"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "text": "低價策略、主流路線為主",
+                "wrap": true,
+                "color": "#aaaaaa",
+                "size": "sm",
+                "offsetTop": "10px"
+            }
+        ]
+    },
+    "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "button",
+                "style": "primary",
+                "color": "#905c44",
+                "action": {
+                    "type": "postback",
+                    "label": "action",
+                    "data": "hello"
+                }
+            }
+        ]
+    }
+}

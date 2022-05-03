@@ -1,0 +1,51 @@
+{
+    "type": "carousel",
+    "contents": [
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "訂閱內容是否為『日本』『疫情現況』?",
+              "margin": "md",
+              "wrap": true
+            }
+          ]
+        },
+        "footer": {
+          "type": "box",
+          "layout": "horizontal",
+          "spacing": "sm",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "確認",
+                "text": "@確認"
+              },
+              "height": "sm"
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "否",
+                "text": "@否"
+              },
+              "height": "sm"
+            }
+          ],
+          "flex": 0
+        },
+        "styles": {
+          "footer": {
+            "separator": true
+          }
+        }
+      }
+    ]
+  }

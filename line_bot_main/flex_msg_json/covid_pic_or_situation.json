@@ -1,0 +1,75 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "hero": {
+        "type": "image",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/255px-Flag_of_Japan.svg.png",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "日本",
+            "style": "normal",
+            "align": "start",
+            "size": "xl",
+            "margin": "none",
+            "weight": "bold",
+            "decoration": "none",
+            "offsetStart": "5px"
+          }
+        ],
+        "height": "50px"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "查看日本今日疫情",
+              "text": "日本最新現況"
+            },
+            "offsetEnd": "none",
+            "offsetTop": "none",
+            "height": "sm",
+            "margin": "none"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "7日疫情趨勢圖",
+              "text": "@7日疫情趨勢圖"
+            },
+            "offsetTop": "none",
+            "height": "sm"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "30日疫情趨勢圖",
+              "text": "@30日疫情趨勢圖"
+            },
+            "offsetTop": "none",
+            "height": "sm"
+          }
+        ],
+        "offsetStart": "none",
+        "borderWidth": "none",
+        "offsetTop": "none"
+      }
+    }
+  ]
+}
